@@ -1,0 +1,22 @@
+﻿.breadcrumbs {
+    grid-column: 1/13;
+    font-size: 16px;
+    /* margin-bottom: 20px;  */
+    z-index: 1000;
+    color: #000;
+    display: inline-flex;
+    width: 100%;
+    margin-left: 100px;
+    margin-top: 10px;
+    z-index: 0;
+}
+
+    .breadcrumbs a {
+        /* color: #007bff; */
+        text-decoration: none;
+        display: inline;
+    }
+
+        .breadcrumbs a:hover {
+            text-decoration: underline;
+        }

@@ -1,0 +1,261 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="codeALL.master.cs" Inherits="BTLweb.codeALL" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link href="css/styleHeader.css" rel="stylesheet" />
+    <link href="css/stylefooter.css" rel="stylesheet" />
+    <link href="css/styleBeadcrumbs.css" rel="stylesheet" />
+    <link href="NewFolder1/themify-icons/themify-icons.css" rel="stylesheet" />
+    <script src="JS/bootstrap.min.js"></script>
+    <script src="JS/custom-script.js"></script>
+    <script src="JS/jquery.min.js"></script>
+    <title>Bài tập lớn</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="all">
+            <div class="header">
+            <nav>
+                <ul class="header-all">
+                    <li><a href="TrangChu.aspx" class="logo"><p>LapTopHay</p></a></li>
+                    <li class="toggle-menu"><a href="#" class="menu-icon"><i class="ti-menu"></i></a></li>
+                    <li class="tim">
+                        <asp:TextBox ID="Timkiem" runat="server" placeholder="Nhập sản phẩm cần tìm....">
+                        </asp:TextBox>
+                       <a href="#" onclick="#"><i class="ti-search"></i></a>
+                    </li>
+
+                    <li><a href="#" class="phone">
+                    <p>Gọi điện mua hàng: <br> 1900 1008</p></a></li>
+                    <li class="dropdown" name="non-account" id="account" runat="server">
+                        
+									</li>
+                    <li><a href="GioHang.aspx" class="giohang">
+                        
+                            <i class="ti-shopping-cart"></i>
+                            <p>Giỏ Hàng</p>
+                        </a></li>                    
+                </ul>
+            </nav>
+               
+        </div>
+            
+            <div class="toolbar">
+            <div class="nav">
+               
+                <ul>
+                    <li><a href="TrangChu.aspx" class="DanhMuc"><i class="ti-align-justify"></i>
+                        Danh Mục Sản Phẩm</a>
+                        <div class="mininav">
+                            <div class="item item1">
+                           Laptop Asus
+                                
+                            </div>
+                            <div class="item item2">
+                              Laptop Dell
+                               
+                            </div>
+                            <div class="item item3">
+                               Laptop HP
+                            </div>
+                            <div class="item item4">
+                              Laptop MSI
+                            </div>
+                            <div class="item item5">
+                                Laptop Gigabyte
+                            </div>
+                            <div class="item item6">
+                                Laptop Acer
+                            </div>
+                            <div class="item item7">
+                               Laptop Lenovo
+                            </div>
+                            <div class="item item8">
+                           Laptop Văn Phòng
+                            </div>
+                            <div class="item item9">
+                              Laptop Gaming
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="KhuyenMai.aspx" class="KhuyenMai"><i class="ti-money"></i>
+                        Khuyến Mại</a></li>
+                    <li><a href="TinTuc.aspx" class="TinTuc"><i class="ti-receipt"></i>
+                        Tin Tức</a></li>
+                    <li><a href="BaoHanh.aspx" class="BaoHanh"><i class="ti-hummer"></i> Bảo Hành</a></li>
+                </ul>
+            </div>
+              
+        </div>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                
+            </asp:ContentPlaceHolder>
+            <div class="footer">
+                <div class="tt0">
+                    <h3>KẾT NỐI VỚI CHÚNG TÔI</h3>
+                    <a href="#"><i class="ti-facebook"></i>Facebook</a>
+                    <a href="#"> <i class="ti-youtube"></i>Youtube</a>
+                    <a href="#"> <i class="ti-tumblr"></i>Tiktok</a>
+                </div>
+                <div>
+                    <div class="tt1">
+                        <p>CÔNG TY TNHH CÔNG NGHỆ CÔNG NGHIỆP</p>
+                        <p>Mã số thuế: 0111111111 do Sở Kế hoạch đầu tư TP HN cấp ngày 29/10/2009</p>
+                        <p>Địa chỉ:</p>
+                        <p>SHOWROOM Hà Nội</p>
+                        <P>96 Định Công, Hoàng Mai, Hà Nội</P>
+                        <p>Thứ 2 – Thứ 6 (9:00 – 20:00)</p>
+                        <p>Thứ 7 (9:00 – 18:00) </p>
+                        <p>Số điện thoại: 1900 1008</p>
+                        <p>Email: info@Laptophay.vn</p>
+                    </div>
+                    <div class="tt2">
+                        <a href="#">Thông tin</a>
+                        <a href="#">Giới thiệu</a>
+                        <a href="#">Thông tin liên hệ</a>
+                        <a href="#">Địa chỉ cửa hàng</a>
+                        <a href="#">Bảo hành ủy quyền ASUS</a>
+                    </div>
+                    <div class="tt3">
+                        <a href="#">Chính sách</a>
+                        <a href="#">Chính sách bán hàng</a>
+                        <a href="#">Chính sách bảo hành</a>
+                        <a href="#">Chính sách bảo mật</a>
+                        <a href="#">Phương thức thanh toán</a>
+                        <a href="#">9 Lý do Mua an tâm</a>
+                        <a href="#">Tổng đài hỗ trợ: 1900 1008 </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                var dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+                var dropdownMenus = document.querySelectorAll('.dropdown-menu');
+
+                // Thêm sự kiện click cho tất cả các dropdown toggle
+                dropdownToggles.forEach(function (toggle) {
+                    toggle.addEventListener('click', function (event) {
+                        var dropdownMenu = this.nextElementSibling;
+                        // Ẩn tất cả các dropdown menu trước khi hiển thị dropdown menu tương ứng
+                        dropdownMenus.forEach(function (menu) {
+                            if (menu !== dropdownMenu) {
+                                menu.style.display = 'none';
+                            }
+                        });
+                        // Hiển thị hoặc ẩn dropdown menu tương ứng
+                        if (dropdownMenu.style.display === 'block') {
+                            dropdownMenu.style.display = 'none';
+                        } else {
+                            dropdownMenu.style.display = 'block';
+                        }
+                        // Ngăn chặn sự kiện click lan ra ngoài và gây ra ẩn dropdown menu
+                        event.stopPropagation();
+                    });
+                });
+
+                // Thêm sự kiện click toàn cục để ẩn dropdown menu khi click ra ngoài
+                document.addEventListener('click', function () {
+                    dropdownMenus.forEach(function (menu) {
+                        menu.style.display = 'none';
+                    });
+                });
+            });
+            // Lấy phần tử #timkiem
+            var timkiem = document.getElementById("Timkiem");
+            var t = document.querySelector(".ti-search");
+            // Lưu vị trí scroll trước đó
+            var lastScrollTop = 0;
+
+            // Thêm sự kiện scroll
+            window.addEventListener("scroll", function () {
+                // Lấy vị trí scroll hiện tại
+                var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+                // Kiểm tra nếu đang cuộn xuống
+                if (scrollTop > lastScrollTop) {
+                    // Ẩn phần tử #timkiem khi cuộn xuống
+                    timkiem.style.display = "none";
+                    t.style.display = "none";
+                } else {
+                    // Hiện phần tử #timkiem khi cuộn lên trên
+                    timkiem.style.display = "block";
+                    t.style.display = "block";
+                }
+
+                // Lưu lại vị trí scroll hiện tại để so sánh trong lần cuộn tiếp theo
+                lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+            });
+
+            // Thêm sự kiện click cho icon menu
+            var menuIcon = document.querySelector('.menu-icon');
+            menuIcon.addEventListener('click', function (event) {
+                // Hiển thị hoặc ẩn dropdown menu và giỏ hàng khi click vào icon menu
+                var dropdownMenu = document.querySelector('.dropdown');
+                var gioHang = document.querySelector('.giohang');
+
+                if (dropdownMenu.style.display === 'block') {
+                    dropdownMenu.style.display = 'none';
+                } else {
+                    dropdownMenu.style.display = 'block';
+                }
+
+                if (gioHang.style.display === 'block') {
+                    gioHang.style.display = 'none';
+                } else {
+                    gioHang.style.display = 'block';
+                }
+
+                // Ngăn chặn sự kiện click lan ra ngoài và gây ra ẩn dropdown menu
+                event.stopPropagation();
+            });
+            //tìm kiếm 
+            document.addEventListener("DOMContentLoaded", function () {
+                // Lấy nút tìm kiếm và ô nhập liệu từ khóa
+                var searchButton = document.querySelector('.ti-search');
+                var searchInput = document.getElementById('Timkiem');
+                // Thêm sự kiện click cho nút tìm kiếm
+                searchButton.addEventListener('click', function () {
+                   
+
+                    // Lấy từ khóa tìm kiếm từ ô nhập liệu
+                    var keyword = searchInput.value.trim();
+
+                    // Chuyển hướng đến trang chủ với tham số truy vấn tìm kiếm
+                    window.location.href = 'TrangChu.aspx?keyword=' + encodeURIComponent(keyword);
+                });
+            });
+          //  item
+            document.addEventListener("DOMContentLoaded", function () {
+                // Lấy tất cả các item
+                var items = document.querySelectorAll('.item');
+
+                // Thêm sự kiện click cho mỗi item
+                items.forEach(function (item) {
+                    item.addEventListener('click', function () {
+                        // Lấy văn bản của item (tên hãng laptop)
+                        var brand = this.textContent.trim();
+
+                        // Xóa từ "Laptop" khỏi nội dung
+                        var brandWithoutLaptop = brand.replace("Laptop", "").trim();
+
+                        // Chuyển hướng đến trang chủ với tham số truy vấn tìm kiếm là tên hãng laptop
+                        window.location.href = 'TrangChu.aspx?keyword=' + encodeURIComponent(brandWithoutLaptop.toLowerCase());
+                    });
+                });
+            });
+
+
+
+        </script>
+
+    </form>
+
+</body>
+</html>

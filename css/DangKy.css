@@ -1,0 +1,134 @@
+﻿
+
+/* đăng ký start */
+.required {
+    color: red;
+    margin-left: 5px;
+}
+
+.login-form label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.login-form {
+    grid-column: 1/13;
+    width: 50%;
+    margin: 60px auto;
+    border-radius: 10px;
+    margin-bottom: 100px;
+}
+
+    .login-form h2 {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .login-form h6 {
+        text-align: center;
+        font-weight: normal;
+    }
+
+        .login-form h6 a {
+            text-align: center;
+            font-weight: bold;
+        }
+
+            .login-form h6 a:hover {
+                color: #3E6AAB;
+            }
+
+    .login-form h4 {
+        text-align: center;
+        margin-top: 60px;
+        margin-bottom: 20px;
+    }
+
+.form-group {
+    text-align: center;
+    margin-bottom: 20px;
+    max-width: 80%;
+}
+
+    .form-group label {
+        margin-left: 40px;
+        margin-left: 10%;
+    }
+/* .login-form [type="text"][required] {
+    max-width: 40px;
+} */
+.form-group {
+    max-width: 80%;
+}
+
+.login-form input[type="text"] {
+    border: 1px solid #ccc;
+    width: 100%;
+    margin-left: 10%;
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+
+.login-form input[type="password"] {
+    border: 1px solid #ccc;
+    padding: 10px;
+    /* margin-bottom: 10px; */
+    width: 100%;
+    margin-left: 10%;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.QuenMK {
+    margin-top: 0;
+    max-width: 80%;
+    margin-left: 10%;
+}
+
+    .QuenMK a:hover {
+        color: #3E6AAB;
+    }
+
+.login-form .BtnDangKy {
+    background-color: #fff;
+    color: #3E6AAB;
+    width: 40%;
+    height: 48px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #3E6AAB;
+    font-size: 20px;
+    display: block;
+    margin: 24px auto;
+}
+
+    /* CSS khi hover vào button */
+    .login-form .BtnDangKy:hover {
+        background-color: #628dce;
+        color: #fff;
+    }
+
+.form-group .form-check {
+    /* padding-left: 30%; */
+    color: red;
+}
+
+.condition-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.condition-item {
+    color: #888;
+}
+
+    .condition-item.valid {
+        color: green;
+    }
+/* đăng ký end */

@@ -1,0 +1,83 @@
+﻿.footer {
+    grid-column: 1/13;
+    color: #fff;
+    padding: 0;
+    /* position: fixed;  */
+    height: 250px;
+    bottom: 0;
+    left: 0;
+    /* padding-top: 100px; */
+    width: 100%;
+}
+
+    .footer > p {
+        height: 40px;
+        background-color: #000;
+    }
+
+    .footer .tt1 {
+        color: #000;
+    }
+
+.footer {
+    padding: 20px;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+    .footer p {
+        margin: 5px 0;
+    }
+
+    .footer .tt1 {
+        float: left;
+        width: 25%;
+    }
+
+    .footer .tt2,
+    .footer .tt3 {
+        float: left;
+        width: 30%;
+        font-size: 20px;
+        margin-left: 40px;
+        text-align: s;
+    }
+
+
+
+    .footer a {
+        color: #666;
+        text-decoration: none;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+        .footer a:hover {
+            color: rgb(110, 98, 252);
+        }
+
+
+
+    .footer .tt0 {
+        display: inline-flex;
+        height: 48px;
+        background-color: #000;
+        color: #fff;
+        width: 100%;
+        line-height: 46px;
+    }
+
+        .footer .tt0 > a {
+            color: #fff;
+            margin-left: 120px;
+        }
+
+.tt0 a:hover {
+    color: rgb(110, 98, 252);
+}
+
+.footer .ti-facebook,
+.footer .ti-youtube,
+.footer .ti-tumblr {
+    margin-left: 5px;
+}

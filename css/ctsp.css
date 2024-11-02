@@ -1,0 +1,195 @@
+﻿.content1 {
+    grid-column: 1/13;
+    padding: 20px;
+    overflow-x: hidden;
+}
+/* chi tiết sản phẩm bắt đầu  */
+.userSP {
+    grid-column: 1/13;
+    margin-top: 10px;
+    margin-left: 80px;
+    margin-bottom: 12px;
+}
+
+.SanPham > hr {
+    grid-column: 1/13;
+    color: #ccc;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.SanPham {
+    grid-column: 1/13;
+}
+
+.AnhSP {
+    float: inline-start;
+    max-width: 48%;
+    /* width: 540px; */
+}
+
+.slideshow-container {
+    position: relative;
+    /* max-width: 540px; */
+    /* margin: auto; */
+    margin-top: 20px;
+    margin-left: 80px;
+    border: 1px solid #ccc;
+    overflow: hidden; /* Ẩn phần nằm ngoài khung hình */
+    border-radius: 8px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.6s ease;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.next {
+    right: 0;
+    border-radius: 5px 0 0 5px;
+    /* color: #ccc; */
+}
+
+.prev {
+    left: 0;
+    border-radius: 0 5px 5px 0;
+}
+
+    .prev:hover, .next:hover {
+        background-color: rgba(126, 123, 123, 0.861);
+        color: white;
+    }
+
+.slide {
+    display: none;
+    text-align: center;
+    animation: fade 1s ease-in-out; /* Sử dụng animation với keyframes đã định nghĩa */
+}
+
+    .slide.active {
+        display: block;
+    }
+
+/* Thêm keyframes cho animation */
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideFromLeft {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+img {
+    width: 100%; /* Kích thước cố định của ảnh */
+    height: 460px; /* Chiều cao tự động điều chỉnh để không làm biến dạng ảnh */
+    vertical-align: middle; /* Canh ảnh giữa dọc */
+}
+
+/* zoom ảnh  start */
+.AnhSP .slideshow-container img {
+    width: 100%;
+    cursor: zoom-in;
+    transition: transform 0.5s ease;
+}
+
+.AnhSP img:hover {
+    transform: scale(1.1);
+}
+/* zoom ảnh  end */
+
+
+/* thong tin sản phẩm  */
+.TT-SanPham {
+    margin-left: 54%;
+    margin-top: 10px;
+    /* margin-right: 20px; */
+}
+
+.TT-SanPham .Gia {
+    margin-top: 20px;
+    font-size: 40px;
+    color: red;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+
+
+
+/* button start */
+/* Quantity control */
+
+
+.Mua {
+    background-color: #3E6AAB;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px; /* Bo góc */
+}
+
+
+.add-to-cart {
+    background-color: #fff;
+    color: #3E6AAB;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: 1px solid #3E6AAB;
+    border-radius: 5px; /* Bo góc */
+}
+
+.Mua, .add-to-cart {
+    width: 500px;
+    margin-bottom: 12px;
+    height: 64px;
+}
+    /* Hover effect khi di chuột qua nút */
+    .Mua:hover {
+        opacity: 0.8; /* Độ trong suốt giảm xuống khi hover */
+    }
+
+    .add-to-cart:hover {
+        color: #fff;
+        background-color: #5e8acd;
+        border: none;
+    }
+
+
+
+
+
+
+
+/* DacDiem-ThongSoKiThuat end */

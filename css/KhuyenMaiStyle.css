@@ -1,0 +1,134 @@
+﻿.content1 {
+    grid-column: 1/13;
+    padding: 20px;
+}
+
+.sales .product {
+    border: none;
+    max-width: 100%;
+    /* Remove border from individual products */
+}
+
+.sales {
+    /* white-space: nowrap; */
+    /* overflow-x: auto; */
+    /* Tạo thanh cuộn ngang khi cần */
+    margin-top: 20px;
+    margin-left: 10%;
+    /* Optional: Add border radius for better appearance */
+    padding: 10px;
+    /* Optional: Add padding for better spacing */
+}
+
+
+    .sales > h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        position: sticky;
+        /* Thêm thuộc tính sticky */
+        top: 0;
+        left: 0;
+        color: black;
+        /* Đặt top là 0 để phần tử giữ vị trí khi cuộn */
+        padding: 10px;
+        /* Thêm padding cho phần tử */
+        z-index: 1;
+        /* Đặt z-index cao hơn để phần tử hiển thị trên các phần tử khác */
+    }
+
+.product {
+    display: inline-block;
+    /* width: calc(33.33% - 20px); */
+    /* Điều chỉnh chiều rộng dựa trên bố cục của bạn */
+    margin-right: 50px;
+    vertical-align: top;
+    width: 90%;
+    box-shadow: 0px 0px 10px 2px rgba(84, 83, 83, 0.1);
+    /* border: 1px solid grey;
+    border-radius: 5px; */
+    padding: 4px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+    .product img, .product .NoiDung {
+        float: left;
+    }
+
+    .product a {
+        text-decoration: none;
+    }
+
+    .product img {
+        width: 20%;
+        border-radius: 5px;
+        height: 100%;
+        /* transition: transform 0.3s ease; */
+    }
+
+    .product:hover img {
+        filter: brightness(85%);
+        transform: translateY(-3px);
+        /* Move the image up slightly on hover */
+    }
+
+    .product h3 {
+        margin-top: 10px;
+        white-space: normal;
+        text-overflow: ellipsis;
+        font-size: 17px;
+    }
+
+    .product p {
+        margin-top: 5px;
+        font-size: 12px;
+        color: #666;
+        display: outside;
+        word-wrap: break-word;
+        /* Cho phép từ ngắn được xuống dòng */
+        white-space: pre-wrap;
+        /* Cho phép các khoảng trắng và tab được tự động phân cách và xuống dòng */
+        /* max-width: 100px;  */
+    }
+
+    .product span {
+        display: block;
+        margin-top: 5px;
+        font-weight: bold;
+        color: red;
+    }
+
+    .product button {
+        margin-top: 10px;
+        padding: 5px 10px;
+        background-color: #3E6AAB;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+
+        .product button:hover {
+            background-color: #2A4D7F;
+        }
+
+.product-buttons {
+    display: block;
+    float: right;
+    margin-top: 10px;
+}
+
+    .product-buttons button {
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 12px;
+    }
+
+
+.view-details {
+    background-color: #fff;
+    color: #3E6AAB;
+    border: 1px solid #3E6AAB;
+}

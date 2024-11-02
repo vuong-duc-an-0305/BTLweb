@@ -1,0 +1,139 @@
+﻿html {
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.header, .toolbar, .footer{
+    display:none;
+}
+
+.container {
+    grid-column:1/13;
+    border: 1px solid black;
+    border-radius: 8px;
+    /* display: block; */
+    max-width: 60%;
+    margin: auto;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+.chitiethoadon {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+    .chitiethoadon th,
+    .chitiethoadon td {
+        width: 20%; /* Độ rộng cố định cho mỗi cột (2 cột nên tổng là 100%) */
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    .chitiethoadon td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+        height: 60px;
+    }
+
+.soHD {
+    margin-left: 100px;
+    padding: 5px; /* Khoảng cách bên trong ô */
+}
+
+    .soHD p {
+        float: left;
+    }
+
+    .soHD .SoHoaDon {
+        margin-left: 60px;
+    }
+
+
+.chitiethoadon th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: left;
+}
+
+h2 {
+    text-align: center;
+}
+
+.thongtincuahang table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.thongtincuahang td {
+    padding: 8px;
+    /* text-align: left; */
+    text-align: center;
+}
+
+.Ngay-ChuKy {
+    width: 100%;
+}
+
+.Ngay {
+    text-align: right;
+}
+
+.Ngay-ChuKy p {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+.ViTri {
+    width: 50px; /* Độ rộng tạm thời của p "ViTri" */
+}
+
+.ChuKy {
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 120px;
+}
+
+    .ChuKy .Khach {
+        font-size: 24px;
+        margin-left: 100px;
+    }
+
+    .ChuKy .Cua {
+        font-size: 24px;
+        margin-left: 280px;
+    }
+.inhoadon{
+    grid-column:1/13;
+    text-align:center;
+}
+.in {
+    display: block;
+    font-size: 20px;
+    margin: 16px auto;
+    width: 160px;
+    height: 60px;
+    background-color: #fff;
+    color: #3E6AAB;
+    border: 1px solid #3E6AAB;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+    .in:hover {
+        background-color: #3E6AAB;
+        color: #fff;
+    }

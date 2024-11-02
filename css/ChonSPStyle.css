@@ -1,0 +1,202 @@
+﻿.nav .DanhMuc {
+    background-color: #fff;
+    color: #000;
+}
+.nav li a:hover {
+    background-color: grey;
+    color: #fff;
+}
+    .content1{
+    grid-column:1/13;
+}
+h4 {
+    margin-left: 40px;
+}
+
+.featured-products {
+    margin-left: 60px;
+}
+
+.product {
+    display: inline-block;
+    width: calc(33.33% - 20px); /* Điều chỉnh chiều rộng dựa trên bố cục của bạn */
+    margin-right: 10px;
+    margin-bottom: 20px;
+    vertical-align: top;
+    width: 250px;
+    height: auto;
+    /* box-shadow: 0px 0px 10px 2px rgba(84, 83, 83, 0.1); */
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 4px;
+    background-color: #fff;
+}
+
+    .product a {
+        text-decoration: none;
+    }
+
+    .product img {
+        width: 100%;
+        border-radius: 5px;
+        height: 200px;
+        /* transition: transform 0.3s ease; */
+    }
+
+    .product:hover img {
+        filter: brightness(85%);
+        transform: translateY(-3px); /* Move the image up slightly on hover */
+    }
+
+    .product h3 {
+        margin-top: 10px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        font-size: 20px;
+    }
+
+    .product p {
+        margin-top: 5px;
+        font-size: 12px;
+        display: inline;
+        margin-right: 4px;
+        word-wrap: break-word; /* Cho phép từ ngắn được xuống dòng */
+        white-space: normal; /* Cho phép các khoảng trắng và tab được tự động phân cách và xuống dòng */
+        /* max-width: 100px;  */
+    }
+
+    .product span {
+        display: block;
+        margin-top: 5px;
+        font-weight: bold;
+        color: red;
+    }
+
+    .product button {
+        margin-top: 10px;
+        padding: 5px 10px;
+        background-color: #3E6AAB;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+
+        .product button:hover {
+            background-color: #2A4D7F;
+        }
+
+.all-products-button {
+    text-align: center; /* Căn giữa nút */
+    margin-top: 20px; /* Khoảng cách với các sản phẩm */
+}
+
+    .all-products-button button {
+        padding: 10px 20px; /* Điều chỉnh kích thước nút */
+        background-color: #fff; /* Màu nền của nút */
+        color: #3E6AAB; /* Màu chữ của nút */
+        border: 1px solid #3E6AAB;
+        border-radius: 5px; /* Làm tròn góc */
+        font-size: 16px; /* Cỡ chữ */
+        cursor: pointer; /* Biến con trỏ thành kiểu tay khi di chuột qua */
+    }
+
+        .all-products-button button:hover {
+            background-color: #3E6AAB;
+            color: #fff; /* Màu nền của nút khi hover */
+        }
+
+.product-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+    .product-buttons .asp-button {
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 12px;
+    }
+
+.add-to-cart {
+    background-color: #3E6AAB;
+    color: white;
+    border: none;
+    margin-left: 10px;
+}
+
+.view-details {
+    background-color: #fff;
+    color: #3E6AAB;
+    border: 1px solid #3E6AAB;
+}
+
+.DanhMucChonSP {
+    grid-column: 1/13;
+    /* display: inline-block; */
+    width: auto;
+    padding: 5px;
+    margin-left: 40px;
+}
+
+.selectHang,
+.selectTen,
+.selectgia,
+.Xem1 {
+    display: inline-block;
+    /* width: 150px; */
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.DanhMucChonSP select {
+    width: 140px;
+    height: 32px;
+}
+
+.selectHang select option,
+.selectgia select option,
+.selectTen select option {
+    background-color: #fff;
+    color: #333;
+    padding: 20px 12px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    /* text-align: center; */
+}
+
+.Xem1 {
+    width: 100px;
+    height: 32px;
+    font-size: 20px;
+    background-color: #fff;
+    color: #3E6AAB;
+    border: 1px solid #3E6AAB;
+    border-radius: 4px;
+}
+
+    #TimKiem:hover {
+        background-color: #2A4D7F;
+        color: #fff;
+    }
+
+.DanhMucChonSP {
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Sản Phẩm end */

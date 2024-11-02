@@ -1,0 +1,235 @@
+﻿html {
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    grid-column:1/13;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    height: 5rem;
+    background-color: #317fec;
+    color: #fff;
+}
+.toolbar{
+    display:none;
+}
+.logo {
+    margin-left: 5%;
+    height: 4rem;
+    width: auto;
+}
+
+.menu-links {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+    .menu-links li {
+        padding: 0 1rem;
+    }
+
+        .menu-links li a {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #fff;
+            text-decoration: none;
+        }
+
+#btnBuy {
+    background-color: #fff;
+    color: #333;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    top: 14.8333px;
+    left: 798.542px;
+    margin-right: 50px;
+    font-size: 20px;
+}
+.section1{
+    margin-top:80px;
+}
+#btnBuy a {
+    text-decoration: none;
+    color: #317fec;
+    font-weight: bold;
+}
+
+    #btnBuy:hover {
+        background: #E1e4e8;
+        color: #317fec;
+    }
+
+.menu-links li a:hover {
+    color: #Acc6e8;
+}
+
+#imgBH {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+
+
+
+.section2 {
+    padding: 20px;
+}
+
+    .section2 h2 {
+        margin-bottom: 15px;
+        color: #317fec;
+    }
+
+    .section2 ul {
+        padding-left: 20px;
+    }
+
+        .section2 ul li {
+            margin-bottom: 10px;
+            list-style: none;
+            text-align: left;
+            margin-left: 70px;
+        }
+
+.background {
+    background-image: url(background.png);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.content {
+    background-color: rgba(255, 255, 255, 0.8); /* Một lớp mờ trắng để làm nền cho nội dung */
+    padding: 20px;
+    border-radius: 10px;
+    /* text-align: center; */
+    margin: 10px 4%;
+}
+
+    .content h2 {
+        text-align: center;
+        margin-bottom: 28px;
+    }
+
+    .content ul {
+        border: 1px solid #E1e4e8;
+        padding: 16px;
+        background-color: #fafcff;
+        /* margin: 5px; */
+        border-radius: 16px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+        .content ul li {
+            line-height: 1.6;
+        }
+
+.section3 {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin: 20px 0;
+    /* margin-top: 60px; */
+    margin-bottom: 180px;
+    margin-left: 4%;
+}
+
+.subsection1,
+.subsection2 {
+    margin-bottom: 20px;
+    font-size: 16px;
+    max-width: 45%;
+    float: left;
+    margin-right: 4%;
+}
+
+.NoiDung {
+    border: 1px solid #E1e4e8;
+    padding: 16px;
+    background-color: #accdfe;
+    /* margin: 5px; */
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgb(105, 157, 235) 100%);
+    /* background-size: 100% 0; */
+    background-repeat: no-repeat;
+    transition: background-size 0.1s ease;
+    height: 140px;
+    margin-top: 10px;
+    line-height: 1.3;
+}
+
+.subsection1 h2,
+.subsection2 h2 {
+    color: #317fec;
+    /* font-family: Arial; */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* .subsection p {
+            text-align: justify;
+            margin: 0 70px;
+        } */
+.section4 {
+    margin: 10px 20%;
+    text-align: center;
+    margin-bottom: 16px;
+    margin-top: 40px;
+}
+
+    .section4 h2 {
+        margin: 10px auto;
+        height: 68px;
+        line-height: 68px;
+        border: 1px solid none;
+        width: 60%;
+        border-radius: 20px;
+        color: #fff;
+        background-color: #accdfe;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgb(105, 157, 235) 100%);
+        /* background-size: 100% 0; */
+        background-repeat: no-repeat;
+        transition: background-size 0.1s ease;
+        margin-bottom: 16px;
+    }
+
+.ti-check {
+    color: black; /* Màu cho icon */
+    /* z-index: 1000; */
+    line-height: 60px;
+    color: #fff;
+    font-size: 40px; /* Kích thước cho icon */
+    font-weight: 900;
+    margin-right: 4px; /* Khoảng cách với văn bản bên cạnh */
+}
+
+.double-subsection {
+    display: flex;
+    justify-content: space-between;
+}
+
+.related-subsections {
+    margin-bottom: 20px;
+}

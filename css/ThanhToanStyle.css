@@ -1,0 +1,78 @@
+﻿/* content */
+.content1 {
+    grid-column: 1/13;
+    padding: 20px;
+    overflow-x: hidden;
+}
+/* Thanh toan đơn hàng start */
+.SpDonHang {
+    /*max-width: 100%;*/
+}
+
+    .SpDonHang img {
+        width: 120px;
+        height: auto;
+    }
+
+    .SpDonHang a {
+        text-decoration: none;
+    }
+
+    .SpDonHang .Money {
+        font-size: 28px;
+        color: red;
+        font-weight: bold;
+    }
+
+    .SpDonHang hr {
+        width: 88%;
+    }
+
+    .SpDonHang table {
+        margin: 14px 0;
+     
+    }
+
+table {
+    width: 100%;
+}
+
+.left-column {
+    text-align: left;
+}
+
+.right-column {
+    text-align: right;
+}
+
+
+
+.PhuongThuc {
+      max-width: 100%;
+}
+
+    
+
+   
+
+   
+
+.HoanTat {
+    margin-top: 40px;
+    margin-left: 400px;
+    display: flex;
+    padding: 10px 20px; /* Kích thước padding của nút */
+    background-color: #fff; /* Màu nền của nút */
+    color: #3E6AAB; /* Màu chữ của nút */
+    border: 1px solid #3E6AAB; /* Loại bỏ viền của nút */
+    border-radius: 5px; /* Làm mềm góc của nút */
+    cursor: pointer; /* Biến con trỏ thành hình bàn tay khi di chuột vào nút */
+    font-size: 16px; /* Kích thước chữ của nút */
+}
+
+    /* CSS cho khi di chuột vào nút */
+    .HoanTat:hover {
+        background-color: #0056b3;
+        color: #ccc;
+    }
+/* Thanh toan đơn hàng end */
